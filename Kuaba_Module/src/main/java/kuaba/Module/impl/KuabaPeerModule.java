@@ -1,9 +1,10 @@
-package com.Template.impl;
+package kuaba.Module.impl;
 
 import org.modelio.vbasic.version.Version;
-import org.modelio.api.module.context.configuration.IModuleAPIConfiguration;
 
-import com.Template.api.ITemplateModulePeerModule;
+import kuaba.Module.api.IKuabaPeerModule;
+
+import org.modelio.api.module.context.configuration.IModuleAPIConfiguration;
 
 /**
  * Implementation of Module services
@@ -12,12 +13,12 @@ import com.Template.api.ITemplateModulePeerModule;
  * <br>Each mda component brings a specific interface that inherit from this one and gives all the desired module services.
  *
  */
-public class TemplateModulePeerModule implements ITemplateModulePeerModule {
-    private TemplateModuleModule module;
+public class KuabaPeerModule implements IKuabaPeerModule {
+    private KuabaModule module;
 	
     private IModuleAPIConfiguration peerConfiguration;
     
-	public TemplateModulePeerModule(TemplateModuleModule statModuleModule, IModuleAPIConfiguration peerConfiguration) {
+	public KuabaPeerModule(KuabaModule statModuleModule, IModuleAPIConfiguration peerConfiguration) {
 		super();
 		this.module = statModuleModule;
 		this.peerConfiguration = peerConfiguration;

@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<!-- definition -->
-	<groupId>com</groupId>
-	<artifactId>Template</artifactId>
+	<groupId>kuaba.Module</groupId>
+	<artifactId>Kuaba</artifactId>
 	<version>1.0.00</version>
 
-	<name>TemplateModule</name>
+	<name>KuabaModule</name>
 
 	<!-- repositories -->
 	<repositories>
@@ -210,4 +210,3 @@
 		</pluginManagement>
 	</build>
 </project>
-

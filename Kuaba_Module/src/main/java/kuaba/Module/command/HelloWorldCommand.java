@@ -1,4 +1,4 @@
-package com.Template.command;
+package kuaba.Module.command;
 
 import java.util.List;
 

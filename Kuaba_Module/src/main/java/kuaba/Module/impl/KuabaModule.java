@@ -1,4 +1,4 @@
-package com.Template.impl;
+package kuaba.Module.impl;
 
 import org.modelio.api.module.AbstractJavaModule;
 import org.modelio.api.module.context.IModuleContext;
@@ -10,20 +10,20 @@ import org.modelio.api.module.parameter.IParameterEditionModel;
  * <br>All Modelio java modules should inherit from this class.
  * 
  */
-public class TemplateModuleModule extends AbstractJavaModule {
+public class KuabaModule extends AbstractJavaModule {
 
-	private TemplateModulePeerModule peerModule = null;
+	private KuabaPeerModule peerModule = null;
 
-	private TemplateModuleLifeCycleHandler lifeCycleHandler = null;
+	private KuabaLifeCycleHandler lifeCycleHandler = null;
 	
-	private static TemplateModuleModule instance;
+	private static KuabaModule instance;
 
-	public static TemplateModuleModule getInstance() {
+	public static KuabaModule getInstance() {
 		return instance;
 	}
 
 	@Override
-	public TemplateModulePeerModule getPeerModule() {
+	public KuabaPeerModule getPeerModule() {
 		return this.peerModule;
 	}
 
@@ -90,13 +90,13 @@ public class TemplateModuleModule extends AbstractJavaModule {
 	 * invoked by Modelio when the module is installed, selected or started.
 	 * @param moduleContext context of the module, needed to access Modelio features.
 	 */
-	public TemplateModuleModule(IModuleContext moduleContext) {
+	public KuabaModule(IModuleContext moduleContext) {
 		super(moduleContext);
 
-		TemplateModuleModule.instance = this;
+		KuabaModule.instance = this;
 
-		this.lifeCycleHandler = new TemplateModuleLifeCycleHandler(this);
-		this.peerModule = new TemplateModulePeerModule(this, moduleContext.getPeerConfiguration());
+		this.lifeCycleHandler = new KuabaLifeCycleHandler(this);
+		this.peerModule = new KuabaPeerModule(this, moduleContext.getPeerConfiguration());
 	}
 
 	/**
@@ -112,7 +112,7 @@ public class TemplateModuleModule extends AbstractJavaModule {
 	
 	@Override
     public String getModuleImagePath() {
-        return "/res/icons/module_16.png";
+        return "/res/icons/kuaba_24.png";
     }
 
 }

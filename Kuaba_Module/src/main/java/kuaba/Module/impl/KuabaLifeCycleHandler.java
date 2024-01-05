@@ -1,4 +1,4 @@
-package com.Template.impl;
+package kuaba.Module.impl;
 
 import java.util.Map;
 
@@ -11,13 +11,13 @@ import org.modelio.vbasic.version.Version;
  * Implementation of the IModuleLifeCycleHandler interface.
  * <br>This default implementation may be inherited by the module developers in order to simplify the code writing of the module life cycle handler .
  */
-public class TemplateModuleLifeCycleHandler extends DefaultModuleLifeCycleHandler {
+public class KuabaLifeCycleHandler extends DefaultModuleLifeCycleHandler {
 
 	/**
 	 * Constructor.
 	 * @param module the Module this life cycle handler is instanciated for.
 	 */
-	public TemplateModuleLifeCycleHandler(TemplateModuleModule module) {
+	public KuabaLifeCycleHandler(KuabaModule module) {
 		super(module);
 	}
 
