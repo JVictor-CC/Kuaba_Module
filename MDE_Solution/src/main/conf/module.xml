@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Module id="${project.name}" class="solution.MDE.impl.DDDModule" binaryversion="5.3.00" version="${project.version}" schema-level="2" uid="0c7cf6f6-eab8-4429-9c2a-eeabe739e198">
+    <ClassPath>
+        <PathEntry path="lib/${project.artifactId}-${project.version}.jar"/>
+        <PathEntry path="lib/commons-lang3-3.1.jar"/>
+    </ClassPath>
+    <Profiles/>
+    <Gui>
+        <Commands>
+            <Command id="TransformationMapping" label="TransformationMapping" tooltip="TransformationMapping" image="res/icons/TransformationCommand_16.png" group="" modify-model="false" group-image="">
+                <Scope metaclass="ModelTree"/>
+                <Handler class="solution.MDE.command.TransformationCommand"/>
+            </Command>
+        </Commands>
+        <Tools/>
+        <ContextualMenu>
+            <CommandRef refid="TransformationMapping"/>
+        </ContextualMenu>
+        <Diagrams/>
+        <Views/>
+    </Gui>
+    <Dependencies/>
+    <Resources>
+        <Styles/>
+    </Resources>
+</Module>

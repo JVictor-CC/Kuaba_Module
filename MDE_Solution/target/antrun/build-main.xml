@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <move file="C:\Users\eduar\OneDrive\Área de Trabalho\New folder\Kuaba-Software-Engineering-tool\MDE_Solution/target/TransformationModule_1.2.38.zip" tofile="C:\Users\eduar\OneDrive\Área de Trabalho\New folder\Kuaba-Software-Engineering-tool\MDE_Solution/target/TransformationModule_1.2.38.jmdac" />
+  </target>
+</project>
