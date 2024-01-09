@@ -5,8 +5,8 @@
 
 	<!-- definition -->
 	<groupId>kuaba.Module</groupId>
-	<artifactId>Kuaba</artifactId>
-	<version>1.0.18</version>
+	<artifactId>KuabaModule</artifactId>
+	<version>1.0.22</version>
 
 	<name>KuabaModule</name>
 
