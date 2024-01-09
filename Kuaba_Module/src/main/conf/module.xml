@@ -264,6 +264,12 @@
                     <ToolRef refid="CreateObjectsToLink" group="Argument links"/>
                     <ToolRef refid="CreateSuggestionLink" group="Suggestion link"/>
                 </Palette>
+                <Wizard label="CIM Diagram" icon="res/icons/kuaba_dm_24.png" information="testing info" details="testing details" preview-image="res/images/dm_preview.png">
+                    <Scope metaclass="Package" stereotype="CIMPackage"/>
+                    <Handler class="kuaba.Module.wizard.CIMDiagramWizardContributor">
+                        <HParameter name="style" value="kuabaStyle"/>
+                    </Handler>
+                </Wizard>
                 <Handler class="StandardCustomizer">
                     <HParameter name="stereotype" value="CIMDiagram"/>
                     <HParameter name="metaclass" value="StaticDiagram"/>
@@ -271,6 +277,12 @@
             </DiagramType>
             <DiagramType base-diagram="ClassDiagram" stereotype="PIMDiagram">
                 <Palette keepBasePalette="true"/>
+                <Wizard label="PIM Diagram" icon="res/icons/kuaba_pim_24.png" information="testing info" details="testing details" preview-image="res/images/pim_preview.png">
+                    <Scope metaclass="Package" stereotype="PIMPackage"/>
+                    <Handler class="kuaba.Module.wizard.PIMDiagramWizardContributor">
+                        <HParameter name="style" value="PimStyle"/>
+                    </Handler>
+                </Wizard>
                 <Handler class="StandardCustomizer">
                     <HParameter name="stereotype" value="PIMDiagram"/>
                     <HParameter name="metaclass" value="ClassDiagram"/>
@@ -278,6 +290,12 @@
             </DiagramType>
             <DiagramType base-diagram="ClassDiagram" stereotype="PSMDiagram">
                 <Palette keepBasePalette="true"/>
+                <Wizard label="PSM Diagram" icon="res/icons/kuaba_psm_24.png" information="testing info" details="testing details" preview-image="res/images/psm_preview.png">
+                    <Scope metaclass="Package" stereotype="PSMPackage"/>
+                    <Handler class="kuaba.Module.wizard.PSMDiagramWizardContributor">
+                        <HParameter name="style" value="PimStyle"/>
+                    </Handler>
+                </Wizard>
                 <Handler class="StandardCustomizer">
                     <HParameter name="stereotype" value="PSMDiagram"/>
                     <HParameter name="metaclass" value="ClassDiagram"/>
